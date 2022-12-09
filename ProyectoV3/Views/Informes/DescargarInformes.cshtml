@@ -1,0 +1,171 @@
+﻿@model ProyectoV3.Models.InformesModel
+@{
+    ViewData["Title"] = "Descargar Informes";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Proyecto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        .titulos {
+            font-size: 25px;
+            font-family: Gothic;
+            text-align: left;
+            text-decoration: blink;
+            color: black;
+        }
+
+        .forms {
+            width: 50%;
+            min-width: 300px;
+            max-width: 1000px;
+            background-color: lightsteelblue;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+            font-family: verdana;
+            color: black;
+            border: 2px solid;
+            border-color: black;
+        }
+
+        .textbox {
+            align-content: center;
+            width: 75%;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 2px;
+        }
+        @@media(max-width:1029px) {
+            .textbox {
+                width: 100%;
+            }
+        }
+
+        .boton {
+            padding: 5px;
+            background-color: #fff;
+            color: black;
+            border: 1px solid;
+            border-color: black;
+        }
+
+        .boton:hover {
+            background-color: #333;
+            color: white;
+            border: 1px solid;
+            border-color: white;
+        }
+
+        .boton:active {
+            border: 1px solid;
+            border-color: white;
+            background-color: black;
+        }
+
+        @@media print {
+            body {
+                background: #fff !important;
+            }
+
+            header {
+                box-shadow: none;
+                background: #fff !important;
+            }
+
+                header h1 {
+                    background: #fff;
+                }
+
+            .nav {
+                display: none;
+            }
+
+            .main-container #page {
+                background: #fff;
+                box-shadow: none;
+                border: 2px solid #000;
+            }
+
+            .content aside.sidebar {
+                display: none;
+            }
+
+            .content article {
+                width: 100%;
+                float: none;
+                padding-left: 0;
+                background: #fff;
+                -webkit-print-color-adjust: exact; /*economy | exact*/
+            }
+
+                .content article #content_box {
+                    background: #fff;
+                    box-shadow: none;
+                    border-top: 2px solid #000
+                }
+
+                .content article a[target=_blank]:after {
+                    content: " (" attr(href) ")";
+                }
+
+                .content article #content_box .related-posts {
+                    display: none;
+                }
+
+                .content article #disqus_thread {
+                    display: none;
+                }
+
+                .content article .crayon-num {
+                    display: none;
+                }
+
+            ins.adsbygoogle {
+                display: none !important;
+            }
+
+            footer {
+                background: #fff;
+            }
+
+                footer .container {
+                    background: #fff;
+                    box-shadow: none;
+                    border: 2px solid #000;
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" id="form" method="post">
+        <section class="forms">
+            <p class="titulos">Descarga de Informes</p>
+            <input class="textbox" type="text" onkeypress="return onlyNumberKey(event)"
+                   placeholder="Número de informe" name="numinform" id="numinform"
+                   style="text-align:center;" required>
+            <input class="textbox" type="text"
+                   placeholder="Texto de ejemplo" name="ejtxt" id="ejtxt"
+                   style="text-align:center;">
+            <input type="submit" class="boton" value="Descargar">
+        </section>
+    </form>
+    <script src="~/js/site.js"></script>
+</body>

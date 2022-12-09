@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{C736FE48-1C58-4AAB-A0DF-40CC0CA4F1F1}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ProyectoV3 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoV3/wwwroot/css/site.css">
+    <Files>
+      <File FileName="ProyectoV3/Views/Shared/_Layout.cshtml" Line="91" Column="1" />
+      <File FileName="ProyectoV3/wwwroot/css/site.css" Line="103" Column="1" />
+      <File FileName="ProyectoV3/Views/Informes/DescargarInformes.cshtml" Line="100" Column="1" />
+      <File FileName="ProyectoV3/wwwroot/lib/bootstrap/dist/css/bootstrap.css" Line="4148" Column="22" />
+      <File FileName="ProyectoV3/Views/Shared/_Layout.cshtml.css" Line="3" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProyectoV3" expanded="True">
+            <Node name="ProyectoV3" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Informes" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="site.css" selected="True" />
+                </Node>
+                <Node name="Imagenes" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="css" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

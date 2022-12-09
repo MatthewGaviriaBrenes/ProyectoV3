@@ -1,0 +1,112 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-top: 100px;
+    background-color: white;
+    background-image: url('../Imagenes/nuevofondo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+/*:root {
+    --primary: #111B54;
+    --light: #ffffff;
+    --grey: #efefef;
+}*/
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-grey {
+    background-color: var(--grey) !important;
+}
+
+.bg-mix {
+    background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 0;
+}
+
+    .btn-primary:hover {
+        background-color: var(--primary);
+    }
+
+#sidebar-container {
+    min-height: 100vh;
+}
+
+    #sidebar-container .logo {
+        padding: 0.875rem 1.25rem;
+    }
+
+    #sidebar-container .menu {
+        width: 18rem;
+    }
+
+#content {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.avatar {
+    max-width: 35px;
+}
+
+.btn-search {
+    right: 0;
+}
+
+.stat {
+    border-right: 1px solid var(--grey);
+}
+
+@media (max-width: 768px) {
+    #sidebar-container {
+        display: none;
+    }
+
+    .stat {
+        border: 0;
+    }
+}
+
+.oculto{
+    font-size:0px;
+    margin:0;
+    padding:0;
+    visibility:hidden;
+    display:none;
+}
+
+@media(max-width:768px) {
+    .oculto {
+        font-size: initial;
+        margin: initial;
+        padding: initial;
+        visibility: visible;
+        display: initial;
+    }
+}
